@@ -17,7 +17,7 @@ spec:
       - name: regcred
       containers:
       - name: nodejs-app
-        image: imphani18/nodejspppp:prod-674968fb028f162a72f59ab1f48eb22e2c68df82
+        image: imphani18/nodejspppp:prod-d0c66b1039dbe351bfffafd82400662beca9dda3
         ports:
         - containerPort: 5000
         env:
