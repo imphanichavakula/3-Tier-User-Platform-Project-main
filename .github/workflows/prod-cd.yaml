@@ -4,7 +4,7 @@ name: Production CD Pipeline
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       - k8-manifests/prod/app-deployment.yaml
       - .github/workflows/prod-cd.yaml
@@ -52,7 +52,7 @@ jobs:
       - name: Checkout main branch
         uses: actions/checkout@v4
         with:
-          ref: master
+          ref: main
 
       - name: Update image tag in prod manifest
         run: |
