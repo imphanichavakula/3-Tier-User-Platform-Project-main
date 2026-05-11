@@ -1,10 +1,10 @@
-# Trigger Test-3
+## Trigger Test-3
 name: Production CD Pipeline
 
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       - k8-manifests/prod/app-deployment.yaml
       - .github/workflows/prod-cd.yaml
