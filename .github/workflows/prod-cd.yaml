@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      QA_IMAGE: devopsshack/nodejs-app:latest
+      QA_IMAGE: imphani18/nodejspppp:latest
       PROD_LATEST_IMAGE: imphani18/nodejspppp:prod-${{ github.sha }}
 
     steps:
