@@ -52,7 +52,7 @@ jobs:
       - name: Checkout main branch
         uses: actions/checkout@v4
         with:
-          ref: main
+          ref: master
 
       - name: Update image tag in prod manifest
         run: |
