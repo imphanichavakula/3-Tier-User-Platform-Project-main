@@ -105,8 +105,6 @@ jobs:
 
       - name: Verify namespace access
         run: |
-          kubectl get pods -n "${K8S_NAMESPACE}" || true
-          kubectl get services -n "${K8S_NAMESPACE}" || true
           kubectl auth can-i create deployments -n "${K8S_NAMESPACE}"
           kubectl auth can-i create services -n "${K8S_NAMESPACE}"
           kubectl auth can-i create ingresses.networking.k8s.io -n "${K8S_NAMESPACE}"
